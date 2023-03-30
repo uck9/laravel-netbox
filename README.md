@@ -1,3 +1,5 @@
+An updated version of the parent project
+
 ## Laravel NetBox
 NetBox is an open source web application designed to help manage and document computer networks.
 
