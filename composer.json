@@ -1,11 +1,11 @@
 {
-    "name": "wickedsoft/laravel-netbox",
-    "description": "Netbox for Laravel 8.x",
+    "name": "gjsbrt/laravel-netbox",
+    "description": "Netbox for Laravel 9.x",
     "keywords": ["netbox", "laravel"],
     "license": "MIT",
     "require": {
         "php": "^8.0|^7.4|^7.3|^7.2",
-        "laravel/framework": "^8.0",
+        "laravel/framework": "^8.0|^9.0",
         "guzzlehttp/guzzle": "^7.0.1"
     },
     "require-dev": {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "wickedsoft\\NetBox\\": "src/"
+            "gjsbrt\\NetBox\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -22,7 +22,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "wickedsoft\\NetBox\\tests\\": "tests"
+            "gjsbrt\\NetBox\\tests\\": "tests"
         }
     },
     "scripts": {
@@ -34,10 +34,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "wickedsoft\\NetBox\\ServiceProvider"
+                "gjsbrt\\NetBox\\ServiceProvider"
             ],
             "aliases": {
-                "NetBox": "wickedsoft\\NetBox\\Facade"
+                "NetBox": "gjsbrt\\NetBox\\Facade"
             }
         }
     }
