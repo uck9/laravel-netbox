@@ -1,8 +1,8 @@
 <?php
 
-namespace wickedsoft\NetBox\Api\Secrets;
+namespace gjsbrt\NetBox\Api\Secrets;
 
-use wickedsoft\NetBox\Api\AbstractApi;
+use gjsbrt\NetBox\Api\AbstractApi;
 
 class KeyGen extends AbstractApi
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace wickedsoft\NetBox\Api\Virtualization;
+namespace gjsbrt\NetBox\Api\Virtualization;
 
-use wickedsoft\NetBox\Api\AbstractApi;
+use gjsbrt\NetBox\Api\AbstractApi;
 
 class ClusterGroups extends AbstractApi
 {

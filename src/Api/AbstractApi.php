@@ -1,17 +1,17 @@
 <?php
 
-namespace wickedsoft\NetBox\Api;
+namespace gjsbrt\NetBox\Api;
 
-use wickedsoft\NetBox\Client;
+use gjsbrt\NetBox\Client;
 
 abstract class AbstractApi implements ApiInterface
 {
-    /** @var \wickedsoft\NetBox\Client */
+    /** @var \gjsbrt\NetBox\Client */
     public $client;
 
     /**
      * AbstractApi constructor.
-     * @param \wickedsoft\NetBox\Client $client
+     * @param \gjsbrt\NetBox\Client $client
      */
     public function __construct(Client $client)
     {

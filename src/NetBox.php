@@ -1,13 +1,13 @@
 <?php
 
-namespace wickedsoft\NetBox;
+namespace gjsbrt\NetBox;
 
 class NetBox
 {
     /** @var \Illuminate\Foundation\Application */
     protected $app;
 
-    /** @var \wickedsoft\NetBox\Client */
+    /** @var \gjsbrt\NetBox\Client */
     protected $client;
 
     /** @var array */
@@ -34,7 +34,7 @@ class NetBox
 
     /**
      * @param null|string $name
-     * @return \wickedsoft\NetBox\Client
+     * @return \gjsbrt\NetBox\Client
      */
     public function site($name = null)
     {
@@ -53,7 +53,7 @@ class NetBox
 
     /**
      * @param string $name
-     * @return \wickedsoft\NetBox\Client
+     * @return \gjsbrt\NetBox\Client
      */
     protected function get($name)
     {
@@ -62,13 +62,13 @@ class NetBox
 
     /**
      * @param string $name
-     * @return \wickedsoft\NetBox\Client
+     * @return \gjsbrt\NetBox\Client
      */
     protected function resolve($name)
     {
         $config = $this->getConfig($name);
 
-        $this->client = new \wickedsoft\NetBox\Client();
+        $this->client = new \gjsbrt\NetBox\Client();
         $this->client->setOptions([
             'base_url' => $config['url'],
             'key' => $config['key']

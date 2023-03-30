@@ -1,8 +1,8 @@
 <?php
 
-namespace wickedsoft\NetBox\Api\IPAM;
+namespace gjsbrt\NetBox\Api\IPAM;
 
-use wickedsoft\NetBox\Api\AbstractApi;
+use gjsbrt\NetBox\Api\AbstractApi;
 
 class Rirs extends AbstractApi
 {

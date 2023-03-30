@@ -1,9 +1,9 @@
 <?php
 
-namespace wickedsoft\NetBox;
+namespace gjsbrt\NetBox;
 
 /**
- * @method static \wickedsoft\NetBox\Api
+ * @method static \gjsbrt\NetBox\Api
  */
 class Facade extends \Illuminate\Support\Facades\Facade
 {

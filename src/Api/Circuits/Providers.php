@@ -1,8 +1,8 @@
 <?php
 
-namespace wickedsoft\NetBox\Api\Circuits;
+namespace gjsbrt\NetBox\Api\Circuits;
 
-use wickedsoft\NetBox\Api\AbstractApi;
+use gjsbrt\NetBox\Api\AbstractApi;
 
 class Providers extends AbstractApi
 {

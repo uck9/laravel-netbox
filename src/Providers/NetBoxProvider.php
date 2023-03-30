@@ -1,6 +1,6 @@
 <?php
 
-namespace wickedsoft\NetBox\Providers;
+namespace gjsbrt\NetBox\Providers;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\UserProvider;
@@ -9,14 +9,14 @@ class NetBoxProvider implements UserProvider
 {
     /**
      * @param array $credentials
-     * @return Authenticatable|\wickedsoft\NetBox\Authentication\User|null
+     * @return Authenticatable|\gjsbrt\NetBox\Authentication\User|null
      */
     public function retrieveByCredentials(array $credentials)
     {
         $checkLogin = app('NetBox')->users()->checkLogin($credentials);
 
         if ($checkLogin['status'] != 'error') {
-            $user = new \wickedsoft\NetBox\Authentication\User();
+            $user = new \gjsbrt\NetBox\Authentication\User();
             $user->forceFill($checkLogin['user']);
 
             return $user;
@@ -35,7 +35,7 @@ class NetBoxProvider implements UserProvider
         return cache()->remember('netbox_user_id_' . $identifier, 60, function () use ($identifier) {
             $response = app('NetBox')->users()->show(['Identifier' => $identifier]);
 
-            $user = new \wickedsoft\NetBox\Authentication\User();
+            $user = new \gjsbrt\NetBox\Authentication\User();
             $user->forceFill($response['user']);
 
             return $user;

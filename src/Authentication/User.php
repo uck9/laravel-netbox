@@ -1,6 +1,6 @@
 <?php
 
-namespace wickedsoft\NetBox\Authentication;
+namespace gjsbrt\NetBox\Authentication;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace wickedsoft\NetBox\Api\Users;
+namespace gjsbrt\NetBox\Api\Users;
 
-use wickedsoft\NetBox\Api\AbstractApi;
+use gjsbrt\NetBox\Api\AbstractApi;
 
 class Groups extends AbstractApi
 {

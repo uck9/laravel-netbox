@@ -7,13 +7,13 @@ The install of this package is pretty straight forward
 ### Install
 Install this package with composer:
 ```
-composer require wickedsoft/laravel-netbox
+composer require gjsbrt/laravel-netbox
 ```
 
 ### Publish configuration
 Copy the config files for laravel-netbox
 ```
-php artisan vendor:publish --provider="wickedsoft\NetBox\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="gjsbrt\NetBox\ServiceProvider" --tag="config"
 ```
 
 ### Environment file

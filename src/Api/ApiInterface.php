@@ -1,6 +1,6 @@
 <?php
 
-namespace wickedsoft\NetBox\Api;
+namespace gjsbrt\NetBox\Api;
 
 interface ApiInterface
 {

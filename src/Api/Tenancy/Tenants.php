@@ -1,8 +1,8 @@
 <?php
 
-namespace wickedsoft\NetBox\Api\Tenancy;
+namespace gjsbrt\NetBox\Api\Tenancy;
 
-use wickedsoft\NetBox\Api\AbstractApi;
+use gjsbrt\NetBox\Api\AbstractApi;
 
 class Tenants extends AbstractApi
 {

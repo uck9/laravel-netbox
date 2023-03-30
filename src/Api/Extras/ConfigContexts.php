@@ -1,8 +1,8 @@
 <?php
 
-namespace wickedsoft\NetBox\Api\Extras;
+namespace gjsbrt\NetBox\Api\Extras;
 
-use wickedsoft\NetBox\Api\AbstractApi;
+use gjsbrt\NetBox\Api\AbstractApi;
 
 class ConfigContexts extends AbstractApi
 {

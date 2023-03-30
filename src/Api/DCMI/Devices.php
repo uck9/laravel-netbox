@@ -1,8 +1,8 @@
 <?php
 
-namespace wickedsoft\NetBox\Api\DCMI;
+namespace gjsbrt\NetBox\Api\DCMI;
 
-use wickedsoft\NetBox\Api\AbstractApi;
+use gjsbrt\NetBox\Api\AbstractApi;
 
 class Devices extends AbstractApi
 {

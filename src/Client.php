@@ -1,8 +1,8 @@
 <?php
 
-namespace wickedsoft\NetBox;
+namespace gjsbrt\NetBox;
 
-use wickedsoft\NetBox\HttpClient\HttpClient;
+use gjsbrt\NetBox\HttpClient\HttpClient;
 
 class Client
 {
@@ -102,7 +102,7 @@ class Client
 
     ];
 
-    /** @var \wickedsoft\NetBox\HttpClient */
+    /** @var \gjsbrt\NetBox\HttpClient */
     protected $httpClient;
 
     /** @var array */
@@ -131,7 +131,7 @@ class Client
         if (!isset($this->classes[$name])) {
             throw new \InvalidArgumentException(sprintf('Undefined method called:"%s"', $name));
         }
-        $class = '\\wickedsoft\\NetBox\\Api\\' . $this->classes[$name];
+        $class = '\\gjsbrt\\NetBox\\Api\\' . $this->classes[$name];
         return new $class($this);
     }
 

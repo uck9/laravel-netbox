@@ -1,6 +1,6 @@
 <?php
 
-namespace wickedsoft\NetBox\HttpClient;
+namespace gjsbrt\NetBox\HttpClient;
 
 interface HttpClientInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-use wickedsoft\NetBox\NetBox;
+use gjsbrt\NetBox\NetBox;
 
 if (!function_exists('netbox')) {
     function netbox()

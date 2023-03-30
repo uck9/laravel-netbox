@@ -1,6 +1,6 @@
 <?php
 
-namespace wickedsoft\NetBox;
+namespace gjsbrt\NetBox;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -15,7 +15,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             __DIR__ . '/../config/netbox.php' => config_path('netbox.php')
         ], 'config');
         \Auth::provider('netbox', function ($app, array $config) {
-            return new \wickedsoft\NetBox\Providers\NetBoxProvider();
+            return new \gjsbrt\NetBox\Providers\NetBoxProvider();
         });
     }
 
@@ -26,7 +26,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function provides()
     {
-        return ['wickedsoft\NetBox\NetBox', 'NetBox'];
+        return ['gjsbrt\NetBox\NetBox', 'NetBox'];
     }
 
     /**
@@ -36,12 +36,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('wickedsoft\NetBox\NetBox', function ($app) {
+        $this->app->singleton('gjsbrt\NetBox\NetBox', function ($app) {
             $netBox = new NetBox($app);
             $netBox->site($netBox->getDefaultSite());
 
             return $netBox;
         });
-        $this->app->alias('wickedsoft\NetBox\NetBox', 'NetBox');
+        $this->app->alias('gjsbrt\NetBox\NetBox', 'NetBox');
     }
 }
