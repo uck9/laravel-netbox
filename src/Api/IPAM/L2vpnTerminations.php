@@ -4,7 +4,7 @@ namespace gjsbrt\NetBox\Api\IPAM;
 
 use gjsbrt\NetBox\Api\AbstractApi;
 
-class L2vpn extends AbstractApi
+class L2vpnTerminations extends AbstractApi
 {
     /**
      * @param $params
