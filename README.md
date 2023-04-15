@@ -425,6 +425,22 @@ NetBox::prefixes()->showAvailable(int $id, array $params)
 ```
 
 ```php
+NetBox::l2vpn()->list(array $params)
+NetBox::l2vpn()->add(array $params)
+NetBox::l2vpn()->remove(int $id, array $params)
+NetBox::l2vpn()->edit(int $id, array $params)
+NetBox::l2vpn()->show(int $id, array $params)
+```
+
+```php
+NetBox::l2vpnTerminations()->list(array $params)
+NetBox::l2vpnTerminations()->add(array $params)
+NetBox::l2vpnTerminations()->remove(int $id, array $params)
+NetBox::l2vpnTerminations()->edit(int $id, array $params)
+NetBox::l2vpnTerminations()->show(int $id, array $params)
+```
+
+```php
 NetBox::rirs()->list(array $params)
 NetBox::rirs()->add(array $params)
 NetBox::rirs()->remove(int $id, array $params)
